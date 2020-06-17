@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  background-color: white;
+  background-image: url(img/flowers.png);
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  height: 120px;
+}
+
+.menu h1 {
+  font-size: 50px;
+}
+
+.menu-buttons button,
+.note-panel .save,
+.note-panel .cancel {
+  padding: 10px 20px;
+  background-color: #c5c2dd;
+  border: 1px solid black;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+}
+
+.menu-buttons button:hover,
+.note-panel .save:hover,
+.note-panel .cancel:hover {
+  background-color: black;
+  color: white;
+}
+
+.btn {
+  margin-right: 10px;
+}
+
+.add {
+  margin-right: 20px;
+}
+
+.note-area {
+  display: flex;
+  align-items: start;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.note {
+  margin: 40px 20px;
+  width: 240px;
+  background-color: rgb(255, 255, 106);
+  border: 1px solid black;
+  border-radius: 7px;
+}
+
+.note-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f0d8e8;
+}
+
+.note-header .delete-note {
+  background: none;
+  padding: 5px 10px;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.note-body {
+  padding: 20px 15px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.note-panel {
+  display: flex;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 40px 0;
+  width: 600px;
+  background-color: rgb(255, 255, 255, 0.9);
+  box-shadow: 0 0 10px black;
+  border-radius: 5px;
+}
+
+.note-panel h2 {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.note-panel label {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.note-panel #text,
+.note-panel #category {
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  width: 100%;
+  max-width: 90%;
+  max-height: 600px;
+  font-size: 20px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.note-panel #text {
+  height: 200px;
+}
+
+.note-panel .error {
+  margin-bottom: 20px;
+  color: red;
+  font-size: 22px;
+  visibility: hidden;
+  letter-spacing: 1px;
+  background-color: #f3f38f;
+}
