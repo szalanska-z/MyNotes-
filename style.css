@@ -38,6 +38,7 @@ body {
   letter-spacing: 2px;
   font-weight: bold;
   font-family: "Montserrat", sans-serif;
+  transition: 0.3s;
 }
 
 .menu-buttons button:hover,
@@ -65,7 +66,6 @@ body {
 .note {
   margin: 40px 20px;
   width: 240px;
-  background-color: rgb(255, 255, 106);
   border: 1px solid black;
   border-radius: 7px;
 }
@@ -89,11 +89,10 @@ body {
 .note-body {
   padding: 20px 15px;
   font-size: 20px;
-  text-align: center;
+  overflow-wrap: break-word;
 }
 
 .note-panel {
-  display: flex;
   display: none;
   justify-content: center;
   align-items: center;
